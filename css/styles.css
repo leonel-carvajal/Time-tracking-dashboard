@@ -2,9 +2,9 @@
 	/*Primary colors*/
 
 	--Blue: hsl(246, 80%, 60%);
-	--Light-red: hsl(15, 100%, 70%);
+	--Orange: hsl(15, 100%, 70%);
 	--Soft-blue: hsl(195, 74%, 62%);
-	--Light-red-study: hsl(348, 100%, 68%);
+	--Light-red: hsl(348, 100%, 68%);
 	--Lime-green: hsl(145, 58%, 55%);
 	--Violet: hsl(264, 64%, 52%);
 	--Soft-orange: hsl(43, 84%, 65%);
@@ -20,7 +20,104 @@
 body{
 	font-size: 18px;
 	font-family: 'Rubik', sans-serif;
-	background-color: var(--Dark-blue);
+	background-color: var(--Very-dark-blue);
 	color: var(--white);
+	padding-top: 2em;
 	padding-bottom: 3em;
+}
+.main{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+}
+.card__main{
+	margin-bottom: 2em;
+}
+.card__top{
+	background-color: var(--Blue);
+	border-radius: 15px;
+	padding: 1.2em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card__img{
+	max-width: 20%;
+	border-radius: 50%;
+	border: 3px solid var(--white);
+	margin-right: 15px;
+}
+.card__name{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 5px;
+}
+.card__report{
+	font-size: 0.8rem;
+	color: var(--Pale-Blue);
+	margin-bottom: 0;
+}
+.card__body{
+	position: relative;
+	z-index: -1;
+	list-style: none;
+	padding: 1.5em 0;
+	margin: 0;
+	border-radius: 0 0 10px 10px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--Dark-blue);
+	transform: translateY(-10px);
+}
+
+.information__image{
+	height: 100px;
+	border-radius: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.img{
+	position: absolute;
+	top: -15px;
+	right: 20px;
+}
+.information__image--orange{
+	background-color: var(--Orange);
+}
+.information__image--red{
+	background-color: var(--Light-red);
+}
+.information__image--blue{
+	background-color: var(--Soft-blue);
+}
+.information__image--green{
+	background-color: var(--Lime-green);
+}
+.information__image--purple{
+	background-color: var(--Violet);
+}
+.information__image--yellow{
+	background-color: var(--Soft-orange);
+}
+.information__body{
+	padding: 1em 1.5em;
+	background-color: var(--Dark-blue);
+	border-radius: 15px;
+	transform: translateY(-45%);
+}
+.information__title{
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+.information__previous{
+	color: var(--Pale-Blue);
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+.top,
+.bottom{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
