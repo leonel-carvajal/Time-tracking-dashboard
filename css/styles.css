@@ -178,6 +178,12 @@ body{
 	color: var(--Pale-Blue);
 	font-size: 0.9rem;
 	font-weight: 300;
+	margin-right: -75px;
+}
+@media screen and (min-width:1024px) {
+	.information__previous{
+		margin-right: 0;
+	}
 }
 .top,
 .bottom{
